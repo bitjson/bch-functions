@@ -6,8 +6,8 @@
         Maintainer: Jason Dreyzehner
         Status: Draft
         Initial Publication Date: 2024-12-12
-        Latest Revision Date: 2024-05-02
-        Version: 1.0.1
+        Latest Revision Date: 2025-05-24
+        Version: 1.0.2
 
 ## Summary
 
@@ -33,9 +33,18 @@ Deployment of this specification is proposed for the May 2026 upgrade.
 The `OP_EVAL` opcode is defined at codepoint `0x62` (`98`) with the following behavior:
 
 1. Pop the top item from the stack to interpret as bytecode.<sup>1</sup>
-2. Preserve the active bytecode (A.K.A. `script`), instruction pointer (A.K.A. program counter or `pc`), and index of the last executed code separator (A.K.A. `pbegincodehash`) by pushing them to the top of the control stack.<sup>2</sup> (Note that this subjects `OP_EVAL` evaluations to the existing control stack depth limit of `100`.)
-3. Reset the instruction pointer and last executed code separator, then evaluate the stack-provided bytecode as if it were the active bytecode.<sup>3</sup> If the bytecode is malformed (i.e. a push operation requires more bytes than are available in the remaining segment of bytecode to be parsed), error.
-4. When the evaluation is complete<sup>4</sup>, restore the original bytecode, instruction pointer, and last executed code separator, then continue evaluation after the OP_EVAL instruction.<sup>5</sup>
+2. If the popped item does not have executable permission, fail the transaction immediately else proceed
+3. Preserve the active bytecode (A.K.A. `script`), instruction pointer (A.K.A. program counter or `pc`), and index of the last executed code separator (A.K.A. `pbegincodehash`) by pushing them to the top of the control stack.<sup>2</sup> (Note that this subjects `OP_EVAL` evaluations to the existing control stack depth limit of `100`.)
+4. Reset the instruction pointer and last executed code separator, then evaluate the stack-provided bytecode as if it were the active bytecode.<sup>3</sup> If the bytecode is malformed (i.e. a push operation requires more bytes than are available in the remaining segment of bytecode to be parsed), error.
+5. When the evaluation is complete<sup>4</sup>, restore the original bytecode, instruction pointer, and last executed code separator, then continue evaluation after the OP_EVAL instruction.<sup>5</sup>
+
+The executable permission is a single bit of extra state attached to stack items, with the following rules:
+
+1. All verbatim data push operations (codepoints `0x00` to `0x60`, except `0x50`) will result in a stack item with the executable bit set.
+2. Stack operations (codepoints `0x6b` to `0x7d`, except `0x74`) will preserve the executable bit (e.g. swap, rot) or pass it on (e.g. dup).
+3. All other operations will clear the bit of popped items, and not have it set on pushed items (e.g. cat, split, add).
+To further clarify, the bit will be cleared even if the operation only touched but didn't actually modify the stack item, e.g. `<executable data> OP_0 OP_CAT` will lose the executable bit.
+Results of introspection opcodes will NOT have the executable permission set.
 
 #### Clarifications
 
