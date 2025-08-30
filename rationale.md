@@ -73,13 +73,11 @@ Finally, the multi-byte alternative would break compatibility of non-executed by
 
 Given the advantages of the standard, stack-based approach – and the significant disadvantages of a parser-modifying approach – this proposal considers a stack-based approach to be most prudent.
 
-## Use of Positive Integer-Based Function Identifiers
+## Format of Function Identifiers
 
-This proposal requires that function identifiers be positive integers within a range bounded by the [Maximum Cumulative Depth (`MAX_CUMULATIVE_DEPTH`)](./readme.md#maximum-cumulative-depth-max_cumulative_depth) VM limit (`0` to `999` inclusive, currently).
+This proposal requires that function identifiers be stack items of length `0` to `7`, inclusive. This range maximizes flexibility while ensuring that VM implementations can rely on a single 64-bit key for function table implementations (including both the identifier's length and value).
 
-Integer-based function identifiers are particularly appropriate given the existing design of the VM: specialized, number pushing opcodes occupy 18 codepoints in the instruction set (`OP_1NEGATE` and `OP_0` to `OP_16`), enabling up to 18 unique function identifiers to be encoded using a single byte.
-
-To minimize the risk of off-by-one errors in ecosystem software, this proposal does not attempt to offset function table indexes (or otherwise incorporate support) for a function defined at `-1`. While this prevents a potential 1-byte optimization per encoded invocation in each contract's 18th-most-encoded function, this proposal considers protocol and ecosystem software simplicity to outweigh such a potential optimization.
+Integer-based function identifiers are particularly appropriate given the existing design of the VM: specialized, number pushing opcodes occupy 18 codepoints in the instruction set (`OP_1NEGATE` and `OP_0` to `OP_16`), enabling up to 18 unique function identifiers to be encoded using a single byte. However, function identifiers are not required to be minimally encoded numbers, avoiding numeric decoding overhead and enabling a wider variety of usage patterns – e.g. "namespaces" (like `0x00` through `0xff`), the single-byte `OP_1NEGATE`, and other identifiers which cannot be parsed as minimal VM numbers.
 
 Outperforming this proposal's approach (in terms of byte-efficiency per encoded invocation) would require reserving a range of user-definable `OP_INVOKE0` to `OP_INVOKE16` (saving 1 byte per invocation). However, function definitions beyond that range would again require use of a generic `OP_INVOKE` (or generic multi-byte opcode range to specify through e.g. `OP_INVOKE999`). As single-byte codepoints are very limited, this proposal considers the two-codepoint `OP_DEFINE`/`OP_INVOKE` approach to be most prudent.
 

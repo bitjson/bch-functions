@@ -34,9 +34,9 @@ The virtual machine is modified to add a [Function Table](#function-table) of im
 
 ### Function Table
 
-The virtual machine (VM) is modified to add a new data structure: the `Function Table` is a data structure (such as a map or sparse array) that holds immutable byte vectors; it maps each defined function identifier to an immutable function body (the byte vector).
+The virtual machine (VM) is modified to add a new data structure: the `Function Table` is a map that holds immutable byte vectors; it maps each defined function identifier to an immutable function body (the byte vector).
 
-Due to VM limits, the function table does not exceed [Maximum Cumulative Depth](#maximum-cumulative-depth-max_cumulative_depth) in length/count, and the function table's held byte vectors do not exceed the [Stack Element Length Limit](https://github.com/bitjson/bch-vm-limits?#increased-stack-element-length-limit).
+Due to VM limits, the function table does not exceed [Maximum Memory Slots](#maximum-memory-slots-max_memory_slots) in defined function count, and the function table's held byte vectors do not exceed the [Stack Element Length Limit](https://github.com/bitjson/bch-vm-limits#increased-stack-element-length-limit).
 
 #### Defined Function Count
 
@@ -44,15 +44,15 @@ A `Defined Function Count` counter is added to track the count of defined functi
 
 #### Function Identifier
 
-A function identifier – the function's index in the [function table](#function-table) – is an integer greater than or equal to `0` and less than [Maximum Cumulative Depth](#maximum-cumulative-depth-max_cumulative_depth) (currently, `1000`).
+A function identifier – the function's key in the [function table](#function-table) – is a byte string of length `0` to `7` (inclusive).
 
-#### Maximum Cumulative Depth (`MAX_CUMULATIVE_DEPTH`)
+#### Maximum Memory Slots (`MAX_MEMORY_SLOTS`)
 
-The existing cumulative stack and altstack depth limit (A.K.A. `MAX_STACK_SIZE`; 1000 items) is modified to incorporate `Defined Function Count`: the sum of stack depth, alternate stack depth, and `Defined Function Count` must be less than `1000`.
+The existing cumulative stack and altstack depth limit (A.K.A. `MAX_STACK_SIZE`; 1000 items) is modified to incorporate `Defined Function Count`: the sum of stack depth, alternate stack depth, and `Defined Function Count` must be less than `Maximum Memory Slots`, set to `1000`.
 
 ##### Notice of Possible Future Expansion
 
-While unusual, it is possible to design pre-signed transactions, contract systems, and protocols which rely on the rejection of otherwise-valid transactions made invalid only by specifically exceeding one or more current VM limits. This proposal interprets such failure-reliant constructions as intentional – the constructions are designed to fail unless/until a possible future network upgrade in which such limits are increased, e.g. upgrade-activation futures contracts. Contract authors are advised that future upgrades may raise VM limits by increasing [Maximum Cumulative Depth](#maximum-cumulative-depth-max_cumulative_depth), or otherwise. See [Limits CHIP Rationale: Inclusion of "Notice of Possible Future Expansion"](https://github.com/bitjson/bch-vm-limits/blob/master/rationale.md#inclusion-of-notice-of-possible-future-expansion).
+While unusual, it is possible to design pre-signed transactions, contract systems, and protocols which rely on the rejection of otherwise-valid transactions made invalid only by specifically exceeding one or more current VM limits. This proposal interprets such failure-reliant constructions as intentional – the constructions are designed to fail unless/until a possible future network upgrade in which such limits are increased, e.g. upgrade-activation futures contracts. Contract authors are advised that future upgrades may raise VM limits by increasing [Maximum Memory Slots](#maximum-memory-slots-max_memory_slots), or otherwise. See [Limits CHIP Rationale: Inclusion of "Notice of Possible Future Expansion"](https://github.com/bitjson/bch-vm-limits/blob/master/rationale.md#inclusion-of-notice-of-possible-future-expansion).
 
 #### Reset Before Each Bytecode Evaluation
 
@@ -66,17 +66,17 @@ Prior to each phase of evaluation (unlocking bytecode, locking bytecode, and red
 
 The `OP_DEFINE` opcode is defined at codepoint `0x89` (`137`) with the following behavior:
 
-1. Pop the top item from the stack to interpret as a function identifier (a VM Number between `0` and `999`, inclusive).<sup>1</sup>
-2. Pop the next item from the stack to interpret as the function body<sup>2</sup>, and copy it to the [function table](#function-table) at the index equal to the function identifier. If that function index is out of range or already defined, error.<sup>3</sup>
+1. Pop the top item from the stack to interpret as a function identifier (a binary string of length `0` to `7`, inclusive).<sup>1</sup>
+2. Pop the next item from the stack to interpret as the function body<sup>2</sup>, and copy it to the [function table](#function-table) at the key equal to the function identifier. If that function key is already defined, error.<sup>3</sup>
 3. Increment `Defined Function Count` by one.<sup>4</sup>
 
 <small>
 
 #### `OP_DEFINE` Clarifications
 
-1. If the stack is empty (no `function_identifier`), error. If the popped item is not a VM Number between `0` and `999` (inclusive), error. See [Rationale: Use of Stack-Based Parameters](./rationale.md#use-of-stack-based-parameters) and [Rationale: Use of Positive Integer-Based Function Identifiers](./rationale.md#use-of-positive-integer-based-function-identifiers).
+1. If the stack is empty (no `function_identifier`), error. If the length of the popped item is outside of the range `0` to `7` (inclusive), error. See [Rationale: Use of Stack-Based Parameters](./rationale.md#use-of-stack-based-parameters) and [Rationale: Format of Function Identifiers](./rationale.md#format-of-function-identifiers).
 2. if the stack is empty (no `function_body`), error. Note that any stack item is a valid function body (including empty stack items); implementations must not attempt to parse the function body until invoked by `OP_INVOKE`. See [Rationale: Deferred Parsing of Function Bodies](./rationale.md#deferred-parsing-of-function-bodies).
-3. See [Rationale: Immutability of Function Bodies](./rationale.md#immutability-of-function-bodies). Note also that function identifiers/table indexes may be defined in any order. See [Rationale: Support for Skipping Function Identifiers](./rationale.md#support-for-skipping-function-identifiers).
+3. See [Rationale: Immutability of Function Bodies](./rationale.md#immutability-of-function-bodies). Note also that function identifiers/table keys may be defined in any order. See [Rationale: Support for Skipping Function Identifiers](./rationale.md#support-for-skipping-function-identifiers).
 4. Note that the [Operation Cost](http://github.com/bitjson/bch-vm-limits#operation-cost-limit) of `OP_DEFINE` is equal to the [Base Instruction Cost](https://github.com/bitjson/bch-vm-limits?#base-instruction-cost).
 
 </small>
@@ -184,6 +184,9 @@ Please see the following implementations for examples and additional test vector
 
 This section summarizes the evolution of this document.
 
+- **v2.0.1 – 2025-08-30**
+  - Rename limit to `MAX_MEMORY_SLOTS` ([#7](https://github.com/bitjson/bch-functions/issues/7))
+  - Allow non-numeric function identifiers ([#11](https://github.com/bitjson/bch-functions/issues/11))
 - **v2.0.0 – 2025-05-27**
   - Split `OP_EVAL` into `OP_DEFINE` and `OP_INVOKE`
 - **v1.0.1 – 2025-05-02**
