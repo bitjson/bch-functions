@@ -75,7 +75,7 @@ Given the advantages of the standard, stack-based approach – and the significa
 
 ## Format of Function Identifiers
 
-This proposal requires that function identifiers be stack items of length `0` to `7`, inclusive. This range maximizes flexibility while ensuring that VM implementations can rely on a single 64-bit key for function table implementations (including both the identifier's length and value).
+This proposal requires that function identifiers be stack items of length `0` to `7`, inclusive. This range maximizes flexibility in contracts while allowing VM implementations to encode both the identifier’s length and value in a single 64‑bit key.
 
 Integer-based function identifiers are particularly appropriate given the existing design of the VM: specialized, number pushing opcodes occupy 18 codepoints in the instruction set (`OP_1NEGATE` and `OP_0` to `OP_16`), enabling up to 18 unique function identifiers to be encoded using a single byte. However, function identifiers are not required to be minimally encoded numbers, avoiding numeric decoding overhead and enabling a wider variety of usage patterns – e.g. "namespaces" (like `0x00` through `0xff`), the single-byte `OP_1NEGATE`, and other identifiers which cannot be parsed as minimal VM numbers.
 
@@ -128,3 +128,24 @@ The [2018 restoration of disabled opcodes](https://upgradespecs.bitcoincashnode.
 Later, the [SigChecks (2020)](https://upgradespecs.bitcoincashnode.org/2020-05-15-sigchecks/) resolved [long-standing issues with the SigOps limit](https://upgradespecs.bitcoincashnode.org/2020-05-15-sigchecks/#motivation) by counting signature checks over the course of evaluation rather than by attempting to naively parse VM bytecode. Finally, the [VM limits (2025)](https://github.com/bitjson/bch-vm-limits) upgrade retargeted all VM limits to use similar density-based evaluation limits.
 
 In summary, **fast validation is a fundamental and intentional feature of the VM itself** – critical for the overall throughput of the Bitcoin Cash network. Hypothetical "pre-validation" of contracts never offered improved performance, would have unnecessarily complicated all implementing software, and has been further obviated by multiple protocol upgrades in the intervening years.
+
+## Non-Impact on Code Mutability or Code Injection
+
+Following concerns about code mutability and injection, the CHIP maintainer conducted a systematic review of the topic as interpreted by various stakeholders. The review notes that:
+
+- [Code mutation is explicitly disallowed by the Functions CHIP](https://bitcoincashresearch.org/t/chip-2025-05-functions-function-definition-and-invocation-operations/1576/20#code-mutation-is-explicitly-disallowed-by-the-functions-chip-1),
+- [Native functions are trivial to use safely](https://bitcoincashresearch.org/t/chip-2025-05-functions-function-definition-and-invocation-operations/1576/20#native-functions-are-trivial-to-use-safely-2),
+- [We already have delegation, it’s simple and useful](https://bitcoincashresearch.org/t/chip-2025-05-functions-function-definition-and-invocation-operations/1576/20#we-already-have-delegation-its-simple-and-useful-3), and
+- [We already have “code that writes code”](https://bitcoincashresearch.org/t/chip-2025-05-functions-function-definition-and-invocation-operations/1576/20#we-already-have-code-that-writes-code-4).
+
+A more detailed review of the "code that writes code" interpretation also provided [a practical example and explanation](https://bitcoincashresearch.org/t/chip-2025-08-functions-takes-2-3/1656/29#we-already-have-code-that-writes-code-2) in which such constructions improve privacy and efficiency today. It also notes that activation of the Loops CHIP would [make "code that writes code" even more practical](https://bitcoincashresearch.org/t/chip-2025-08-functions-takes-2-3/1656/29#loops-chip-would-make-the-above-discussion-irrelevant-3).
+
+Further, in reviewing [Alternative: CHIP-2025-08 Functions (Takes 2 & 3)](./alternatives.md#alternative-chip-2025-08-functions-takes-2--3), it was found that function factories have negligible or positive impacts on practical contract security<sup>1</sup>, can simplify both compilers and contract algorithms<sup>2</sup>, and meaningfully improve validation performance (ultimately reducing transaction sizes) for opCost-limited contracts<sup>3</sup>.
+
+<small>
+
+1. [Reviewing risks: self-unpacking code - Bitcoin Cash Research](https://bitcoincashresearch.org/t/chip-2025-08-functions-takes-2-3/1656/48#reviewing-risks-self-unpacking-code-7)
+2. [Mutation tracking makes contracts more complex, less efficient, and harder to audit - Bitcoin Cash Research](https://bitcoincashresearch.org/t/chip-2025-08-functions-takes-2-3/1656/48#mutation-tracking-makes-contracts-more-complex-less-efficient-and-harder-to-audit-11n)
+3. [The problem with stack-based constants - Bitcoin Cash Research](https://bitcoincashresearch.org/t/chip-2025-08-functions-takes-2-3/1656/48#the-problem-with-stack-based-constants-12)
+
+</small>

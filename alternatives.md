@@ -77,6 +77,23 @@ Overall, this proposal benefits from many years of additional information, resea
 
 An earlier iteration of this proposal, `CHIP 2024-12 OP_EVAL`, enabled similar behavior via a single `OP_EVAL` opcode. The `OP_EVAL` approach enables an optimization saving up to 3 bytes per non-inlineable function given optimal stack scheduling. However, practical application of the optimization requires considerable implementation cost in ecosystem software, exposes optimized contracts to additional toolchain risks, and may ultimately have a zero-byte impact on transaction sizes. See [Withdrawing `OP_EVAL`](https://bitcoincashresearch.org/t/chip-2024-12-op-eval-function-evaluation/1450/91?u=bitjson).
 
+### Alternative: CHIP-2025-08 Functions (Takes 2 & 3)
+
+Two mutually-exclusive alternative proposals – "Take 2" and "Take 3" – each attempted to resolve concerns regarding "code that writes code" by modifying this proposal to require protocol-level tracking of stack item mutation with the aim of preventing function factory usage<sup>1</sup>.
+
+A detailed review<sup>2</sup> of mutation tracking found that the protocol addition would increase protocol complexity and VM overhead<sup>3</sup>, prevent meaningful contract optimizations<sup>4</sup>, prevent potential simplifications in compilers and tooling<sup>5</sup>, and fail to improve practical contract security<sup>6</sup> (see also: [Rationale: Non-Impact on Code Mutability or Code Injection](./rationale.md#non-impact-on-code-mutability-or-code-injection).)
+
+<small>
+
+1. [CHIP-2025-08 Functions (Takes 2 &amp; 3) - Bitcoin Cash Research](https://bitcoincashresearch.org/t/chip-2025-08-functions-takes-2-3/1656)
+2. [Should we add mutation tracking to the Bitcoin Cash VM? - Bitcoin Cash Research](https://bitcoincashresearch.org/t/chip-2025-08-functions-takes-2-3/1656/44#should-we-add-mutation-tracking-to-the-bitcoin-cash-vm-1)
+3. [Protocol complexity & overhead of mutation tracking - Bitcoin Cash Research](https://bitcoincashresearch.org/t/chip-2025-08-functions-takes-2-3/1656/48#protocol-complexity-overhead-of-mutation-tracking-9)
+4. [The problem with stack-based constants - Bitcoin Cash Research](https://bitcoincashresearch.org/t/chip-2025-08-functions-takes-2-3/1656/48#the-problem-with-stack-based-constants-12)
+5. [Level 1 comparison with vs. without function factories - Bitcoin Cash Research](https://bitcoincashresearch.org/t/chip-2025-08-functions-takes-2-3/1656/48#level-1-comparison-with-vs-without-function-factories-19)
+6. [Reviewing risks: self-unpacking code - Bitcoin Cash Research](https://bitcoincashresearch.org/t/chip-2025-08-functions-takes-2-3/1656/49#reviewing-risks-self-unpacking-code-7)
+
+</small>
+
 ### Alternative: Output-Level Function Annex
 
 Another potential (partial) alternative to this proposal is the addition of a per-output function annex, perhaps using a "`PREFIX_FUNCTIONS`" encoding and deployment strategy similar to the [token-encoding `PREFIX_TOKEN`](https://cashtokens.org/docs/spec/chip#token-prefix) codepoint, coupled with an "`OP_INVOKE`" operation (this could share the `PREFIX_FUNCTIONS` codepoint).
