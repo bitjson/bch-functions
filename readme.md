@@ -101,7 +101,9 @@ The `OP_INVOKE` opcode is defined at codepoint `0x8a` (`138`) with the following
 1. If the stack is empty (no `function_identifier`), error. If the popped item is not a VM Number representing a previously-defined function in the [function table](#function-table), error. If the referenced function body has a length of zero: error if the control stack depth limit of `100` would be exceeded by a non-empty evaluation; otherwise, continue after the `OP_INVOKE` instruction.
 2. Note that this requires the control stack to be capable of holding a new **stack frame** data type to preserve the state of the parent evaluation.
 3. `OP_INVOKE`ed bytecode otherwise shares the context of the parent evaluation:
-   1. Invoked functions may modify the stack and alternate stack without limitation, and control stack usage (e.g. `OP_IF/OP_END_IF` or further `OP_INVOKE`s) within the evaluation remains restricted by the 100-item depth limit.
+   1. Invoked functions may modify the stack, alternate stack, and function table. Note that invoked functions are subject to the following limits:
+      - Control stack usage (e.g. `OP_IF/OP_END_IF` and/or further `OP_INVOKE`s) within the evaluation remains restricted by the 100-item depth limit (cumulatively applied to all nested function calls).
+      - Stack depth + alternate stack depth + [Defined Function Count](#defined-function-count) must be no larger than [Maximum Memory Slots](#maximum-memory-slots-max_memory_slots) (formerly: `MAX_STACK_SIZE`), which is currently `1000`.
    2. Executed `OP_CODESEPARATOR` operations record the index of the current instruction pointer (A.K.A. `pc`) within the `OP_INVOKE`ed bytecode as the last executed code separator (A.K.A. `pbegincodehash`).
    3. The `OP_ACTIVEBYTECODE` operation produces the serialization of the active bytecode beginning from the last executed code separator.
    4. In signature operations, the covered bytecode includes only the active bytecode beginning from the last executed code separator (or if none have been executed in the current evaluation, the full active bytecode).
