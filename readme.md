@@ -6,8 +6,8 @@
         Maintainer: Jason Dreyzehner
         Status: Draft
         Initial Publication Date: 2024-12-12
-        Latest Revision Date: 2025-05-27
-        Version: 2.0.0
+        Latest Revision Date: 2025-09-05
+        Version: 2.0.2
 
 ## Summary
 
@@ -189,6 +189,7 @@ This section summarizes the evolution of this document.
 - **v2.0.2 – 2025-09-05**
   - Add [Rationale: Non-Impact on Code Mutability or Code Injection](./rationale.md#non-impact-on-code-mutability-or-code-injection)
   - Review [Alternative: CHIP-2025-08 Functions (Takes 2 & 3)](./alternatives.md#alternative-chip-2025-08-functions-takes-2--3)
+  - Update VMB tests and benchmarks
 - **v2.0.1 – 2025-08-30**
   - Rename limit to `MAX_MEMORY_SLOTS` ([#7](https://github.com/bitjson/bch-functions/issues/7))
   - Allow non-numeric function identifiers ([#11](https://github.com/bitjson/bch-functions/issues/11))
