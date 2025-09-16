@@ -4,10 +4,10 @@
         Type: Standards
         Layer: Consensus
         Maintainer: Jason Dreyzehner
-        Status: Draft
         Initial Publication Date: 2024-12-12
         Latest Revision Date: 2025-09-05
-        Version: 2.0.2
+        Version: 2.0.2 (26e22566)
+        Status: Frozen for Lock-In
 
 ## Summary
 
@@ -184,25 +184,25 @@ Please see the following implementations for examples and additional test vector
 
 ## Changelog
 
-This section summarizes the evolution of this document.
+This section summarizes the evolution of this proposal.
 
-- **v2.0.2 – 2025-09-05**
+- **v2.0.2 – 2025-09-05** ([`26e22566`](https://github.com/bitjson/bch-functions/commit/26e22566a18f2f3b542ff46a70d258d5da585cd8) – [diff vs. `master`](https://github.com/bitjson/bch-functions/compare/master...26e22566a18f2f3b542ff46a70d258d5da585cd8))
   - Add [Rationale: Non-Impact on Code Mutability or Code Injection](./rationale.md#non-impact-on-code-mutability-or-code-injection)
   - Review [Alternative: CHIP-2025-08 Functions (Takes 2 & 3)](./alternatives.md#alternative-chip-2025-08-functions-takes-2--3)
   - Update VMB tests and benchmarks
-- **v2.0.1 – 2025-08-30**
+- **v2.0.1 – 2025-08-30** ([`55704fae`](https://github.com/bitjson/bch-functions/commit/55704fae2c78dd1be046bea422520261aaf645b1))
   - Rename limit to `MAX_MEMORY_SLOTS` ([#7](https://github.com/bitjson/bch-functions/issues/7))
   - Allow non-numeric function identifiers ([#11](https://github.com/bitjson/bch-functions/issues/11))
-- **v2.0.0 – 2025-05-27**
+- **v2.0.0 – 2025-05-27** ([`ed45ff15`](https://github.com/bitjson/bch-functions/commit/ed45ff1566ed0f01e0507c9ec01656b90a9a182b))
   - Split `OP_EVAL` into `OP_DEFINE` and `OP_INVOKE`
-- **v1.0.1 – 2025-05-02**
+- **v1.0.1 – 2025-05-02** ([`f551b3de`](https://github.com/bitjson/bch-functions/commit/f551b3de9d99ad562c4ade6f2be98a8925ab16bc))
   - Clarify description ([#1](https://github.com/bitjson/bch-functions/pull/1))
   - Add [Rationale](./rationale.md)
   - Add [Evaluation of Alternatives](./alternatives.md)
   - Add [Risk Assessment](./risk-assessment.md)
   - Commit latest test vectors
   - Link to BCHN implementation
-- **v1.0.0 – 2024-12-12**
+- **v1.0.0 – 2024-12-12** ([`e2aa5e28`](https://github.com/bitjson/bch-functions/commit/e2aa5e28a6a799f45ae013b2fa684f31a758539b))
   - Initial publication
 
 ## Copyright
