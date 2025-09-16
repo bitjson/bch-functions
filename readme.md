@@ -186,7 +186,7 @@ Please see the following implementations for examples and additional test vector
 
 This section summarizes the evolution of this proposal.
 
-- **v2.0.2 – 2025-09-05** ([`26e22566`](https://github.com/bitjson/bch-functions/commit/26e22566a18f2f3b542ff46a70d258d5da585cd8) – [diff vs. `master`](https://github.com/bitjson/bch-functions/compare/master...26e22566a18f2f3b542ff46a70d258d5da585cd8))
+- **v2.0.2 – 2025-09-05** ([`26e22566`](https://github.com/bitjson/bch-functions/commit/26e22566a18f2f3b542ff46a70d258d5da585cd8) – [diff vs. `master`](https://github.com/bitjson/bch-functions/compare/26e22566a18f2f3b542ff46a70d258d5da585cd8...master))
   - Add [Rationale: Non-Impact on Code Mutability or Code Injection](./rationale.md#non-impact-on-code-mutability-or-code-injection)
   - Review [Alternative: CHIP-2025-08 Functions (Takes 2 & 3)](./alternatives.md#alternative-chip-2025-08-functions-takes-2--3)
   - Update VMB tests and benchmarks
