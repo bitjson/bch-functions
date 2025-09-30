@@ -71,51 +71,539 @@ Responses to this standard communication are recorded for all organizations that
 
 ### Node & VM Implementations
 
-Responses from open source node and Virtual Machine (VM) implementations that support Bitcoin Cash.
+Responses from open source node and virtual machine (VM) implementations that support Bitcoin Cash.
 
-<details>
-
-<summary>Pending</summary>
-
-_Full table will be published and periodically updated from October 1 through November 1. For a past example, see [VM Limits CHIP Stakeholder Responses](https://github.com/bitjson/bch-vm-limits/blob/master/stakeholders.md)._
-
-</details>
+| Implementation                                    | As of Version | Approve | Disapprove | Neutral | Pending |
+| ------------------------------------------------- | :-----------: | :-----: | :--------: | :-----: | :-----: |
+| [AlbaDsl](https://github.com/albaDsl/alba-dsl)    |   `v2.0.2`    |   ✅    |            |         |         |
+| [BCHD](https://bchd.cash/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcoin Cash Node](https://bitcoincashnode.org/) |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcoin Verde](https://bitcoinverde.org/)        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Flowee](https://flowee.org/products/hub/)        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Libauth](https://libauth.org/)                   |   `v2.0.2`    |   ✅    |            |         |         |
+| [Knuth](https://kth.cash/)                        |   `v2.0.2`    |   ✅    |            |         |         |
 
 ### Wallets
 
 Responses from wallets that support Bitcoin Cash.
 
-<details>
-
-<summary>Pending</summary>
-
-_Full table will be published and periodically updated from October 1 through November 1. For a past example, see [VM Limits CHIP Stakeholder Responses](https://github.com/bitjson/bch-vm-limits/blob/master/stakeholders.md)._
-
-</details>
+| Wallet                                                           | As of Version | Approve | Disapprove | Neutral | Pending |
+| ---------------------------------------------------------------- | :-----------: | :-----: | :--------: | :-----: | :-----: |
+| [Amagi Wallet](https://amagi.finance/)                           |   `v2.0.2`    |   ✅    |            |         |         |
+| [Atomic Wallet](https://atomicwallet.io/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [`bchwallet`](https://github.com/gcash/bchwallet)                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcoin.com Wallet](https://wallet.bitcoin.com/)                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitPay Wallet](https://bitpay.com/wallet)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitpie](https://bitpie.com/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BlockParty Wallet](https://blockparty.sh/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Cashonize](https://cashonize.com/)                              |   `v2.0.2`    |   ✅    |            |         |         |
+| [CashAddress.org](https://cashaddress.org/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Cashual Wallet](https://gitlab.com/monsterbitar/cashual-wallet) |   `v2.0.2`    |   ✅    |            |         |         |
+| [Cake Wallet](https://cakewallet.com/)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coin Wallet](https://coin.space/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinEx Wallet](https://wallet.coinex.com/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coinomi](https://www.coinomi.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoolWallet](https://www.coolwallet.io/)                         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Crypto.com DeFi Wallet](https://crypto.com/defi-wallet)         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Cwallet](https://cwallet.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Edge](https://edge.app/)                                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Electron Cash](https://electroncash.org/)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Ellipal Wallet](https://www.ellipal.com/)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Exodus](https://www.exodus.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Flowee Pay](https://flowee.org/products/pay/)                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [FullStack.Cash](https://fullstack.cash/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Guarda](https://guarda.com/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [imToken](https://token.im/)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [KeepKey](https://shapeshift.com/keepkey)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Keevo Wallet](https://www.keevowallet.com/)                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Komodo Wallet](https://komodoplatform.com/)                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Ledger](https://www.ledger.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Melis](https://www.melis.io/)                                   |   `v2.0.2`    |   ✅    |            |         |         |
+| [MentaFresca](https://mentafresca.space/)                        |   `v2.0.2`    |   ✅    |            |         |         |
+| [MetaMask](https://metamask.io/)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Neutrino Wallet](https://neutrino.cash/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [OneKey](https://onekey.so/)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Opal Wallet](https://opalwallet.cash)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Payperless](https://www.payperless.com/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Paytaca](https://www.paytaca.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [PurelyPeer](https://purelypeer.cash/)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SafePal](https://safepal.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Satochip](https://satochip.io/)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Selene Wallet](https://selene.cash/)                            |   `v2.0.2`    |   ✅    |            |         |         |
+| [Stack Wallet](https://stackwallet.com/)                         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Tangem](https://tangem.com/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [TotalSig](https://www.totalsig.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Trezor](https://trezor.io/)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Trust Wallet](https://trustwallet.com/)                         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Trustee Plus](https://trusteeglobal.com/)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Unstoppable Wallet](https://unstoppable.money/)                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Verde Wallet](https://github.com/SoftwareVerde/verde-wallet)    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [West Wallet](https://westwallet.io/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [XDEFI Wallet](https://www.xdefi.io/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [XO.cash](https://xo.cash/)                                      |   `v2.0.2`    |   ✅    |            |         |         |
+| [Zapit](https://www.zapit.io/)                                   |   `v2.0.2`    |   ✅    |            |         |         |
 
 ### Projects
 
 Responses from open source libraries, indexers, educational resources, and community initiatives.
 
-<details>
-
-<summary>Pending</summary>
-
-_Full table will be published and periodically updated from October 1 through November 1. For a past example, see [VM Limits CHIP Stakeholder Responses](https://github.com/bitjson/bch-vm-limits/blob/master/stakeholders.md)._
-
-</details>
+| Project                                                                   | As of Version | Approve | Disapprove | Neutral | Pending |
+| ------------------------------------------------------------------------- | :-----------: | :-----: | :--------: | :-----: | :-----: |
+| [Accept Bitcoin Cash Initiative](https://acceptbitcoin.cash/)             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [ActorForth](https://github.com/ActorForth/ActorForth)                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [awesomebitcoin.cash](https://awesomebitcoin.cash/)                       |   `v2.0.2`    |   ✅    |            |         |         |
+| [bch.info](https://bch.info/)                                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BCH Bull](https://bchbull.com/)                                          |   `v2.0.2`    |   ✅    |            |         |         |
+| [BCH DevSuite](https://devsuite.actorforth.org/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BCH Bliss](https://www.bliss.cash/)                                      |   `v2.0.2`    |   ✅    |            |         |         |
+| [BCH Blaze](https://x.com/bchblaze)                                       |   `v2.0.2`    |   ✅    |            |         |         |
+| [BCH Festival](https://x.com/bchfestival)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BCH Latam](https://www.instagram.com/bchlatam/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BCH Works](https://bitcoincashsite.com/)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [`bch-rpc-explorer`](https://github.com/sickpig/bch-rpc-explorer)         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BCH-Cockpit](https://github.com/hosseinzoda/bchcockpit)                  |   `v2.0.2`    |   ✅    |            |         |         |
+| [`bchtipbot`](https://github.com/merc1er/bchtipbot)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BCHMempool.cash](https://bchmempool.cash/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BCHNinja](https://bch.ninja/)                                            |   `v2.0.2`    |   ✅    |            |         |         |
+| [BCMR Generator](https://github.com/mr-zwets/bcmr-generator)              |   `v2.0.2`    |   ✅    |            |         |         |
+| [BCMR Indexer](https://github.com/paytaca/bcmr-indexer)                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [badgers.cash](https://badgers.cash)                                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [bestbchwallets.com](https://www.bestbchwallets.com/)                     |   `v2.0.2`    |   ✅    |            |         |         |
+| [Bitauth IDE](https://ide.bitauth.com)                                    |   `v2.0.2`    |   ✅    |            |         |         |
+| [BitCANN](https://github.com/BitCANN/bitcann-contracts)                   |   `v2.0.2`    |   ✅    |            |         |         |
+| [Bitcart](https://bitcart.ai/)                                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcash](https://github.com/pybitcash/bitcash)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcoin Cash Argentina](https://bitcoincashargentina.com/)               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcoin Cash City](https://bchcity.com)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcoin Cash Explorer](https://explorer.salemkode.com/)                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcoin Cash Foundation](https://bitcoincashfoundation.org/)             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcoin Cash Hangout](https://rss.com/podcasts/fiendishcrypto/)          |   `v2.0.2`    |   ✅    |            |         |         |
+| [Bitcoin Cash Podcast](https://bitcoincashpodcast.com/)                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcoin Cash TV](https://bitcoincashtv.com/)                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitcoinCash Nigeria](https://bch.ng/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitcoinCash.org](https://bitcoincash.org/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitcoinCashClient](https://github.com/david-shattuck/BitcoinCashClient)  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitcoinCashStandards.org](https://bitcoincashstandards.org/)             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitcoinCashResearch.org](https://bitcoincashresearch.org/)               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitcoinFees.cash](https://bitcoinfees.cash/)                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitcoinOutLoud](https://www.youtube.com/@BitcoinOutLoud)                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcore](https://github.com/bitpay/bitcore)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitrequest](https://www.bitrequest.io/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bmap.app](https://bmap.app/)                                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CashAccount.info](https://www.cashaccount.info/)                         |   `v2.0.2`    |   ✅    |            |         |         |
+| [CashChannels.org](http://cashchannels.org/)                              |   `v2.0.2`    |   ✅    |            |         |         |
+| [CashFusion.org](https://cashfusion.org/)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CashFusion Red Team](https://fusionstats.redteam.cash/)                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CashNodes.io](https://cashnodes.io/)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [cashp](https://github.com/Ekliptor/cashp)                                |   `v2.0.2`    |   ✅    |            |         |         |
+| [CashScript](https://cashscript.org/)                                     |   `v2.0.2`    |   ✅    |            |         |         |
+| [CashTags](https://tags.infra.cash/)                                      |   `v2.0.2`    |   ✅    |            |         |         |
+| [CashTokens.org](https://cashtokens.org/)                                 |   `v2.0.2`    |   ✅    |            |         |         |
+| [CashTokens Airdrop Tool](https://github.com/mr-zwets/airdrop-tool)       |   `v2.0.2`    |   ✅    |            |         |         |
+| [CashTokens Studio](https://cashtokens.studio/)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Chaingraph](https://chaingraph.cash/)                                    |   `v2.0.2`    |   ✅    |            |         |         |
+| [CasualBCH Podcast](casualbch.cash)                                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coin Center](https://www.coincenter.org/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Developers.Cash](https://developers.cash/)                               |   `v2.0.2`    |   ✅    |            |         |         |
+| [Discover.cash](https://discover.cash/)                                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Documentation.cash](https://documentation.cash/)                         |   `v2.0.2`    |   ✅    |            |         |         |
+| [Easier Flipstarter](https://gitlab.com/uak/easier-flipstarter)           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Flipstarter.cash](https://flipstarter.cash/)                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Flipstarters on Bitcoin Cash](https://flipstarters.bitcoincash.network/) |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Flipwatch](https://flipwatch.org/)                                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Flowee Products](https://flowee.org/products/)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Fountainhead Cash](https://fountainhead.cash/)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Fulcrum](https://github.com/cculianu/Fulcrum)                            |   `v2.0.2`    |   ✅    |            |         |         |
+| [Future Bitcoin Cash](https://futurebitcoin.cash)                         |   `v2.0.2`    |   ✅    |            |         |         |
+| [Googol.cash Testnet Faucet](https://tbch.googol.cash/)                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Haskoin](https://github.com/haskoin/haskoin-core)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Jedex](https://github.com/bitjson/jedex)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Johoe's Mempool Statistics](https://jochen-hoenicke.de/queue/)           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [HelpMe.Cash](https://helpme.cash/)                                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Hur project](https://hur-project.gitlab.io/hur-freelancers/)             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Kallisti.cash](https://kallisti.cash/)                                   |   `v2.0.2`    |   ✅    |            |         |         |
+| [Knuth Libraries](https://github.com/k-nuth)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Mainnet.cash](https://mainnet.cash/)                                     |   `v2.0.2`    |   ✅    |            |         |         |
+| [Meep](https://github.com/gcash/meep)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Melroy's BCH Explorer](https://explorer.melroy.org)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [minisatoshi.cash](https://minisatoshi.cash/)                             |   `v2.0.2`    |   ✅    |            |         |         |
+| [NeonDaThal](https://www.youtube.com/@NeonDaThal/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [One.Surgery](https://one.surgery/)                                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Opal Base](https://github.com/58opals/OpalBase)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [OpenCashDAO](https://github.com/OpenCashDAO/opencashdao-contracts)       |   `v2.0.2`    |   ✅    |            |         |         |
+| [OpenTokenRegistry](https://otr.cash/)                                    |   `v2.0.2`    |   ✅    |            |         |         |
+| [Oracles.cash](https://oracles.cash/)                                     |   `v2.0.2`    |   ✅    |            |         |         |
+| [Pantera Crypto](https://www.youtube.com/@PanteraCrypto)                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [PayButton](https://paybutton.org/)                                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Paytaca POS](https://github.com/paytaca/paytaca-pos)                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Permissionless Software Foundation](https://psfoundation.cash/)          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Pos.cash](https://github.com/softwareverde/pos-cash)                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [python-bitcoincash](https://github.com/dagurval/python-bitcoincash)      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [r/BCHCashTokens](https://www.reddit.com/r/BCHCashTokens/)                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [r/bitcoincash](https://www.reddit.com/r/bitcoincash/)                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [r/btc](https://www.reddit.com/r/btc/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [r/cashtokens](https://www.reddit.com/r/cashtokens/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [rbch](https://github.com/Rucknium/rbch)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Rostrum](https://gitlab.com/bitcoinunlimited/rostrum)                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [rust-bitcoincash](https://gitlab.com/rust-bitcoincash/rust-bitcoincash/) |   `v2.0.2`    |         |            |         |   ⏳    |
+| [ScanToPay.cash](https://scantopay.cash/)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Shinobi Art Engine](https://github.com/cashninjas/shinobi-art-engine)    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [slp.dev](https://slp.dev/)                                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SmartBCH](https://smartbch.org/)                                         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Spedn](https://spedn.pl/)                                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Stamps.Cash](https://stamps.cash/)                                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SwiftFulcrum](https://github.com/58opals/SwiftFulcrum)                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Taiwan Bitcoin Cash (台灣比特幣現金)](https://twbitcoin.cash/)           |   `v2.0.2`    |   ✅    |            |         |         |
+| [Tipb.ch](https://tipb.ch)                                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Tokenaut](https://www.tokenaut.cash/)                                    |   `v2.0.2`    |   ✅    |            |         |         |
+| [TokenStork](https://tokenstork.com/)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Unspent.cash](https://unspent.cash/)                                     |   `v2.0.2`    |   ✅    |            |         |         |
+| [Unspent Phi](https://unspent.app/)                                       |   `v2.0.2`    |   ✅    |            |         |         |
+| [Vox.cash](https://vox.cash/)                                             |   `v2.0.2`    |   ✅    |            |         |         |
+| [Watchtower](https://watchtower.cash/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
 
 ### Industry
 
 Responses from exchanges, miners, services, and other businesses.
 
-<details>
-
-<summary>Pending</summary>
-
-_Full table will be published and periodically updated from October 1 through November 1. For a past example, see [VM Limits CHIP Stakeholder Responses](https://github.com/bitjson/bch-vm-limits/blob/master/stakeholders.md)._
-
-</details>
+| Organization                                                   | As of Version | Approve | Disapprove | Neutral | Pending |
+| -------------------------------------------------------------- | :-----------: | :-----: | :--------: | :-----: | :-----: |
+| [2Miners](https://2miners.com/)                                |   `v2.0.2`    |         |            |   ➖    |         |
+| [3xpl](https://3xpl.com/)                                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [58 Opals](https://58opals.com)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [A Fifth of Gaming](https://afifthofgaming.com/)               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [ALFAcoins](https://www.alfacoins.com/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Amagi Finance](https://amagi.finance/)                        |   `v2.0.2`    |   ✅    |            |         |         |
+| [Antpool](https://www.antpool.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Anycoin Direct](https://anycoindirect.eu/)                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [AnyHedge](https://anyhedge.com/)                              |   `v2.0.2`    |   ✅    |            |         |         |
+| [Aptissio](https://www.aptissio.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [APMEX](https://www.apmex.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [ArzPaya](https://arzpaya.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [AscendEX](https://ascendex.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Azbit](https://azbit.com/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bake](https://bake.io/)                                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Ballet Global](https://www.ballet.com/)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Basepoker](https://basepoker.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BasicSwap](https://basicswapdex.com/)                         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [B2BinPay](https://b2binpay.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BCH BULL](https://bchbull.com/)                               |   `v2.0.2`    |   ✅    |            |         |         |
+| [BCH Guru](https://bch.guru/)                                  |   `v2.0.2`    |   ✅    |            |         |         |
+| [BCH.games](https://bch.games/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BCH PUMP](https://bchpump.cash/)                              |   `v2.0.2`    |   ✅    |            |         |         |
+| [BenSwap](https://benswap.cash/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BEQUANT](https://bequant.io/)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Binance](https://www.binance.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BigONE](https://bigone.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BiggestLab](https://biggestlab.io)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bibox](https://www.bibox.com)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BingX](https://bingx.com/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BISON](https://bisonapp.com/)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bit.com](https://www.bit.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitauth.com](https://bitauth.com)                             |   `v2.0.2`    |   ✅    |            |         |         |
+| [Bitbuy](https://bitbuy.ca/)                                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitbank](https://bitbank.cc/)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitCats Heroes Club](https://bitcatsheroes.club/)             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcoin.com](https://bitcoin.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcoin.de](https://www.bitcoin.de/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcoin.TM](https://bitcoin.tm/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitcoinVN](https://bitcoinvn.io/)                             |   `v2.0.2`    |   ✅    |            |         |         |
+| [Bitcoin Group SE](https://bitcoingroup.com/)                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitcoin India](https://bitcoin-india.org/)                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Biconomy](https://www.biconomy.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitdeer](https://www.bitdeer.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitexen](https://www.bitexen.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitFlyer](https://bitflyer.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitfinex](https://www.bitfinex.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitGet](https://www.bitget.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitGo](https://www.bitgo.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitGlobal](https://www.bitglobal.com/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitgree](https://www.bitgree.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bithumb](https://www.bithumb.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitIRA](https://www.bitira.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitjson.com](https://bitjson.com/)                            |   `v2.0.2`    |   ✅    |            |         |         |
+| [Bitkub](https://www.bitkub.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitMart](https://www.bitmart.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitMEX](https://www.bitmex.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitOasis](https://bitoasis.net/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitoPro](https://www.bitopro.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitpanda](https://www.bitpanda.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BitPay](https://bitpay.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitso](https://bitso.com/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitstamp](https://www.bitstamp.net/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitrue](https://www.bitrue.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bitvavo](https://bitvavo.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Blockpit](https://www.blockpit.io/)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Blockchain Poker](https://blockchain.poker/)                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Blockchain.com](https://blockchain.com/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Blockchair](https://blockchair.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BlockExplorer.one](https://blockexplorer.one/)                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BlockNG](https://blockng.money/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Blockonomics](https://www.blockonomics.co/)                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BNS](https://bitbns.com/)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BTC Markets](https://www.btcmarkets.net/)                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BTCBOX](https://www.btcbox.co.jp/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BTCC](https://www.btcc.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BTCPOP](https://btcpop.co/)                                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Buda.com](https://www.buda.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bullish](https://bullish.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Buy Hodl Sell](https://buyhodlsell.com/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BVOX](https://www.bvox.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Bybit](https://www.bybit.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [BYDFi](https://www.bydfi.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Catex](https://www.catex.io/)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Cash-Ninjas](https://ninjas.cash/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Cashrain](https://cashrain.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Cauldron](https://www.cauldron.quest/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CEX.IO](https://cex.io/)                                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Chaintip](https://www.chaintip.org/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Changelly](https://changelly.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [ChangeHero](https://changehero.io/)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [ChangeNOW](https://changenow.io/)                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CheapAir](https://www.cheapair.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CheckBook.cash](https://checkbook.cash/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Choice](https://www.choiceapp.io/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Circle](https://www.circle.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Clementine's Nightmare](https://clementinesnightmare.io/)     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CloverPool](https://cloverpool.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Code Valley](https://codevalley.com)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coin ATM Radar](https://coinatmradar.com/)                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coin Dance](https://cash.coin.dance/)                         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coinbase](https://www.coinbase.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coinbooth](https://coinbooth.io/)                             |   `v2.0.2`    |   ✅    |            |         |         |
+| [CoinCarp](https://www.coincarp.com/)                          |   `v2.0.2`    |         |            |   ➖    |         |
+| [Coincheck](https://coincheck.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinCodex](https://coincodex.com/)                            |   `v2.0.2`    |         |            |   ➖    |         |
+| [CoinCola](https://www.coincola.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinCraddle](https://coincraddle.com/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinEx](https://www.coinex.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinGate](https://coingate.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinGecko](https://www.coingecko.com/)                        |   `v2.0.2`    |         |            |   ➖    |         |
+| [Coinhub](https://coinhubatm.com/)                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coinify](https://www.coinify.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinLedger](https://coinledger.io/)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinLoan](https://coinloan.io/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coinone](https://coinone.co.kr/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinoSwap](https://coinoswap.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coinmama](https://www.coinmama.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coinmerce](https://coinmerce.io/)                             |   `v2.0.2`    |         |            |   ➖    |         |
+| [Coinmetro](https://coinmetro.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinNexus](https://coinnexus.ch/)                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coinpanda](https://coinpanda.io/)                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinPayments](https://www.coinpayments.net/)                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinRabbit](https://coinrabbit.io/)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinRemitter](https://coinremitter.com/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinSpot](https://www.coinspot.com.au/)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coinsquare](https://www.coinsquare.com/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Coinstash](https://coinstash.com.au/)                         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinStats](https://coinstats.app/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinSwitch](https://coinswitch.co/)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinTracker](https://www.cointracker.io/)                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinTracking](https://cointracking.info/)                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinW](https://www.coinw.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CoinZoom](https://www.coinzoom.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Cointree](https://www.cointree.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Criptan](https://criptan.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Crypto.com](https://crypto.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CryptoCompare](https://www.cryptocompare.com/)                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CryptoKnights.games](https://cryptoknights.games)             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Cryptomus](https://cryptomus.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CryptoProcessing](https://cryptoprocessing.com/)              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CryptoR.AT](https://cryptor.at/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Crypto Tax Calculator](https://cryptotaxcalculator.io/)       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [CryptoWoo](https://www.cryptowoo.com/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Currency.com](https://currency.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Daylight Freedom Foundation](https://daylightfreedom.org)     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Deepcoin](https://www.deepcoin.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Deribit](https://www.deribit.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Dex-Trade](https://dex-trade.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [DigiFinex](https://www.digifinex.com/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Digital Currency Group](https://dcg.co/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Digital Surge](https://digitalsurge.com.au/)                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [EasyBit](https://easybit.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [EDX Markets](https://edxmarkets.com/)                         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Emirex](https://emirex.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [eGifter](https://www.egifter.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [eToro](https://www.etoro.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Emerald DAO](https://emerald-dao-redemption.vercel.app/)      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [EXMO](https://exmo.com/)                                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [F2Pool](https://www.f2pool.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Fastex](https://fastex.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Foxbit](https://foxbit.com.br/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [FMFW.io](https://fmfw.io/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Flexa](https://flexa.co/)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Forward Financial](https://forwardfi.com/)                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Foundry](https://foundrydigital.com/)                         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [FundMe.cash](https://fundme.cash)                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Gambling Apes Club](https://apes.cash/)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Gate.com](https://gate.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [GateHub](https://gatehub.net/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Guardarian](https://guardarian.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Gemini](https://www.gemini.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [General Protocols](https://generalprotocols.com)              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Giottus](https://giottus.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Goblins.cash](https://goblins.cash/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [GoCrypto](https://gocrypto.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Godex.io](https://godex.io/)                                  |   `v2.0.2`    |         |            |   ➖    |         |
+| [GoUrl.io](https://gourl.io/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Grayscale Investments](https://grayscale.com/)                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Haveno](https://haveno-reto.com/)                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [HitBTC](https://hitbtc.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Hotcoin](https://www.hotcoin.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Houdini Swap](https://houdiniswap.com/)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [HTX](https://www.htx.com/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [ICONOMI](https://www.iconomi.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Independent Reserve](https://www.independentreserve.com/)     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [INDODAX](https://indodax.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Indoex](https://www.indoex.io/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [InstaCrypto](https://instacrypto.in/)                         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [IPFS-BCH](https://ipfs-bch.pat.mn/)                           |   `v2.0.2`    |   ✅    |            |         |         |
+| [Kanga Exchange](https://kanga.exchange/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Karsha Exchange](https://karsha.biz/)                         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Keys4Coins](https://www.keys4coins.com/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [KickEx](https://kickex.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Koinly](https://koinly.io/)                                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Korbit](https://www.korbit.co.kr/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Kraken](https://kraken.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Kryptex Pool](https://pool.kryptex.com/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [KuCoin](https://www.kucoin.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Lamassu](http://lamassu.is)                                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [LATOKEN](https://latoken.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Launchpad IP](https://launchpadip.com/)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [LBank](https://www.lbank.info/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [LetsExchange](https://letsexchange.io/)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Life Labs HTMA](https://lifelabshtma.com/)                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Living Room of Satoshi](https://www.livingroomofsatoshi.com/) |   `v2.0.2`    |         |            |         |   ⏳    |
+| [LMAX Digital](https://www.lmaxdigital.com/)                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [LocalCoinSwap](https://localcoinswap.com/)                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Luno](https://www.luno.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Lykke](https://www.lykke.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Matrixport](https://www.matrixport.com/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [MAX Exchange](https://max.maicoin.com/)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Memo Technology, Inc.](https://memo.cash/)                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Menufy](https://www.menufy.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Mercado Bitcoin](https://www.mercadobitcoin.com.br/)          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Mercuryo](https://mercuryo.io/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [MERCATOX](https://mercatox.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [MEXC](https://www.mexc.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Mining-Dutch](https://www.mining-dutch.nl/)                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [MistSwap](https://mistswap.fi/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [MoonPay](https://www.moonpay.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Moria Protocol](https://www.moria.money/)                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Mudrex](https://mudrex.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Mullvad](https://mullvad.net/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [N.exchange](https://n.exchange/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Namecheap](https://www.namecheap.com/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [NanoGPT](https://nano-gpt.com/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Ndax](https://ndax.io/)                                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Netcoins](https://netcoins.ca/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Newegg](https://www.newegg.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Newton](https://www.newton.co/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Nexo](https://nexo.io/)                                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [nft.storage](https://nft.storage/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [NFTRarity.cash](https://nftrarity.cash/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [NiceHash](https://www.nicehash.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Noise.app](https://noise.app/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [NovaDAX](https://www.novadax.com.br/)                         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [NOWPayments](https://nowpayments.io/)                         |   `v2.0.2`    |         |            |         |   ⏳    |
+| [OceanEx](https://oceanex.pro/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [OKLink](https://oklink.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [OKX](https://www.okx.com/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [ONUS](https://goonus.io/)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [P2B](https://p2pb2b.com/)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Panmoni](https://panmoni.com/)                                |   `v2.0.2`    |   ✅    |            |         |         |
+| [Paribu](https://www.paribu.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [ParityUSD](https://parityusd.com/)                            |   `v2.0.2`    |   ✅    |            |         |         |
+| [PassimPay](https://passimpay.io/)                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Paxos](https://paxos.com/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Paybis](https://paybis.com)                                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [PayPal](https://paypal.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Pepi](https://pepi.cash/)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Phemex](https://phemex.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Pionex](https://www.pionex.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Plisio](https://plisio.net/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Plus500](https://www.plus500.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Poolin](https://www.poolin.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Poolside Puffers](https://puffers.cash/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Poloniex](https://poloniex.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [PrimeXBT](https://primexbt.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Prompt.Cash](https://prompt.cash/)                            |   `v2.0.2`    |   ✅    |            |         |         |
+| [ProBit](https://www.probit.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [PROHASHING](https://prohashing.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Publish0x](https://www.publish0x.com/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Purse](https://purse.io/)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Read.cash](https://read.cash/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Reku](https://reku.id/)                                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Revolut](https://www.revolut.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [RamNode](https://ramnode.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Riften Labs](https://www.riftenlabs.com/)                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Robinhood](https://robinhood.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Rocketr](https://rocketr.net/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SatoshiDice](https://satoshidice.com/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SBICrypto Pool](https://sbicrypto.com/)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [ShapeShift](https://shapeshift.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SideShift.ai](https://sideshift.ai/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SIGMAPOOL](https://sigmapool.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SimpleFX](https://simplefx.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SimpleSwap](https://simpleswap.io/)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SoloPool.org](https://solopool.org/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SolomonPierce](https://solomonpierce.com/)                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SouthXChange](https://southxchange.com/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Spice NFT Series](https://spicenft.art/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SpiderPool](https://www.spiderpool.com/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Stake](https://stake.com/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [StealthEX](https://stealthex.io/)                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Swapin](https://www.swapin.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SwapSpace](https://swapspace.co/)                             |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SwapSwop](https://swapswop.io/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Swapzone](https://swapzone.io/)                               |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Sweet](https://sweet.io/)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [SWFT Blockchain](https://www.swft.pro/)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Swissquote](https://www.swissquote.com/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Switchere](https://switchere.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Swyftx](https://swyftx.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [TangoSwap](https://tangoswap.cash/)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Tapbit](https://www.tapbit.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [TapSwap](https://tapswap.cash)                                |   `v2.0.2`    |   ✅    |            |         |         |
+| [Taxbit](https://www.taxbit.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Tether](https://tether.to/)                                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [THORSwap](https://thorswap.finance/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [The Giving Block](https://thegivingblock.com/)                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [The Real Bitcoin Club](https://therealbitcoin.club/)          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [The Reapers](https://reapers.cash/)                           |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Tidex](https://tidex.com/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Tokocrypto](https://www.tokocrypto.com)                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [TRASTRA](https://trastra.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Travala.com](https://www.travala.com/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Trijo](https://trijo.co/)                                     |   `v2.0.2`    |         |            |         |   ⏳    |
+| [TruBit](https://www.trubit.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [TxStreet](https://txstreet.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Upbit](https://www.upbit.com)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Uphold](https://uphold.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Uptick](https://uptick.co/)                                   |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Valour](https://valour.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Venmo](https://venmo.com/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [ViaBTC](https://www.viabtc.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [VinDAX](https://vindax.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Visionati](https://visionati.com/)                            |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Wayex](https://www.wayex.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [WazirX](https://wazirx.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Wealth99](https://www.wealth99.com/)                          |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Wealthsimple](https://www.wealthsimple.com/)                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [WebMoney](https://bitcoincash.wmtransfer.com/)                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [WEEX](https://www.weex.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [WhalesHeaven](https://www.whalesheaven.com/)                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [WhiteBIT](https://whitebit.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Wirex](https://wirexapp.com/)                                 |   `v2.0.2`    |         |            |         |   ⏳    |
+| [WOO X](https://woox.io/)                                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [XeggeX](https://xeggex.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [XT](https://www.xt.com/)                                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [XULU.TECH](https://xulu.tech/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
+| [YoBit](https://yobit.net/)                                    |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Youhodler](https://www.youhodler.com/)                        |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Zaif](https://zaif.jp/)                                       |   `v2.0.2`    |         |            |         |   ⏳    |
+| [ZebPay](https://zebpay.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
+| [ZenLedger](https://zenledger.io/)                             |   `v2.0.2`    |         |            |         |   ⏳    |
 
 ## Statements
 
@@ -142,6 +630,10 @@ The following articles have been published in support of this CHIP:
 - [General Protocols](https://generalprotocols.com): "[GP Statement on CHIPs and 2026 Activation](https://read.cash/@GeneralProtocols/gp-statement-on-chips-and-2026-activation-b59b43a1)" (September 8, 2025)
 - [Jonas Lundqvist](https://jonaslundqvist.net/): "[Endorsement for Bitcoin Cash 2026 CHIPs](https://jonaslundqvist.net/2025/09/13/endorsement-for-bitcoin-cash-2026-chips/)" (September 13, 2025)
 - [ABLA](https://bitcoincashresearch.org/u/abla): [Statement via bitcoincashresearch.org](https://bitcoincashresearch.org/t/2026-layla-upgrade-lock-in-chip-endorsements-thread/1672/19) (September 16, 2025)
+- [Taiwan Bitcoin Cash (台灣比特幣現金)](https://twbitcoin.cash/): [Statement via x.com](https://x.com/twbitcoincash/status/1968707600218001771) (September 18, 2025)
+- [Knuth](https://kth.cash/): [Statement via x.com](https://x.com/KnuthNode/status/1970470221979828411) (September 23, 2025)
+- [Fernando Pelliccioni](https://x.com/ferpelliccioni): [Statement via x.com](https://x.com/ferpelliccioni/status/1970466467121696771) (September 23, 2025)
+- [2qx](https://github.com/2qx): [Statement via vox.cash](https://vox.cash/pop#066d35df297b09d4f5df71736ce9254b65121c3e16640f34f20851c941c28f72) (September 30, 2025)
 
 The following statements have been submitted in support of this CHIP.
 
@@ -218,6 +710,57 @@ The following statements have been submitted in support of this CHIP.
 > So yes. I support these upgrades and look forward to seeing them live on-chain in consensus as of mid-day May 15th, 2026.
 >
 > —<cite>[Calin Culianu](https://x.com/cculianu), [Bitcoin Cash Node](https://bitcoincashnode.org/) contributor, [Fulcrum](https://github.com/cculianu/Fulcrum) lead developer, [Electron Cash](https://electroncash.org/) contributor <a href="https://x.com/cculianu/status/1954905694416617818">⧉</a></cite>
+
+> Knuth Project strongly endorses the BCH 2026 upgrade:
+>
+> • CHIP-2025-05 Bitwise
+> • CHIP-2025-05 Functions
+> • CHIP-2021-05 Loops
+> • CHIP-2024-12 P2S
+>
+> These CHIPs expand the CashVM with practical, safe tools for contracts: P2S removes outdated limits, Loops and Functions bring structure and reuse, and Bitwise restores essential operations. All safeguarded by the 2025 VM Limits upgrade.
+>
+> Knuth has been part of BCH since the beginning, and we are excited to see these improvements activated May 15, 2026.
+>
+> —<cite>[Knuth](https://x.com/KnuthNode), node implementation and development platform <a href="https://x.com/KnuthNode/status/1970470221979828411">⧉</a></cite>
+
+> As a #BCH dev I endorse the 2026 upgrade: P2S, Loops, Functions, Bitwise.
+>
+> They modernize CashVM and lift old limits.
+>
+> —<cite>[Fernando Pelliccioni](https://x.com/ferpelliccioni), [Knuth](https://kth.cash/) lead developer <a href="https://x.com/ferpelliccioni/status/1970466467121696771">⧉</a></cite>
+
+> As maintainer of awesomebitcoin.cash, unspent.app, unspent.cash, futurebitcoin.cash and now vox.cash, I (the individual committing code under the github username 2qx) approve of CHIP-2021-05 Loops, CHIP-2024-12 P2S, CHIP-2025-05 Functions, and CHIP-2025-05 Bitwise OPs improvements to the Bitcoin Cash protocol.
+>
+> Although it has been possible to refer (or pay to) unnamed functions by their hashes, and it's also been possible to use loops by chaining logic as steps across multiple transactions, the work to formalize these capabilities as first-class features (within a single evaluation) should greatly simplify using functions and loops on Bitcoin Cash.
+>
+> Below are some notes on impacts to active projects.
+>
+> \#\# Impacts from P2S: pay-to-script Proposal
+>
+> The P2S CHIP will impact Bitcoin Cash Futures markets, because the active coupon supply is currently being generated from chat messages in token commitments, and the change in maximum token commitment length from 40 to 128 bytes (https://github.com/bitjson/bch-p2s?tab=readme-ov-file#token-commitment-length) reduces the cost to chat from 250 sats per byte to 80 sats per byte.
+>
+> If activated, P2S will make chatting cheaper in vox channels, and reduce the number of coupons emitted per post, which can be expected to lower yield rates for FBCH series and lower the total locked value (TLV) in short term (T-10k) futures vaults.
+>
+> The P2S CHIP was released in Dec' 24, the FutureChan contract (controlling vox channels) was designed in Mar' 25. So the change in commitment length was known well in advance. Presumably, because it is an open market, folks will price in the change ahead of time, and sort out who will get the fewer coupons after the CHIP activates with the market.
+>
+> This source of coupons is currently fairly small, but the market may look very different in six months. Because vox channels emit coupons ten weeks in advance of a future maturing, the market impact wouldn't be until around August 1st 2026.
+>
+> \#\# Oracle development enabled by Bitwise Operation Codes
+>
+> The mining app for vox is currently blocked by a lack of bitwise operation codes in the VM.
+>
+> Each thread of the mining token contract will use bitwise operations to calculate current and previous difficulty targets from the current and previous transaction ids.
+>
+> Bitwise inversion will map the number of leading zeros on a transaction to a difficulty target. Bit shifts also allow for simple and cheap exponentiation, which will be use (along with OP_CHECKSEQUENCEVERIFY) for a difficulty adjustment algorithm.
+>
+> \# In short, the bitwise operation codes will be very useful for doing math that would otherwise get quite complex.
+>
+> \=========================================
+>
+> H1Ib/QFGUt3s6n9HhL0sK0JBdE277E5m4f+viiEx8of4G+nLnJrNohqXBZa4Du9zt6vxhPX17VLLs7Yz/BSMJj8=
+>
+> —<cite>[2qx](https://github.com/2qx), [awesomebitcoin.cash](https://awesomebitcoin.cash/), [Unspent](https://unspent.cash), [Unspent Phi](https://unspent.app), [Future Bitcoin Cash](https://futurebitcoin.cash), [vox.cash](https://vox.cash), [mainnet-js](https://github.com/mainnet-cash/mainnet-js) contributor <a href="https://vox.cash/pop#066d35df297b09d4f5df71736ce9254b65121c3e16640f34f20851c941c28f72">⧉</a></cite>
 
 > I tentatively endorse locking in the following CHIPs for the Bitcoin Cash 2026 upgrade cycle:
 >
@@ -317,6 +860,12 @@ The following statements have been submitted in support of this CHIP.
 > Let’s go! Since everyone has defined the upcoming upgrades: P2S, Bitwise, Functions, and Bounded Loops. There’s no need to repeat them. I endorse all four CHIPs as well.
 >
 > —<cite>[ABLA](https://bitcoincashresearch.org/u/abla) <a href="https://bitcoincashresearch.org/t/2026-layla-upgrade-lock-in-chip-endorsements-thread/1672/19">⧉</a></cite>
+
+> After studying the latest CHIPs for the Bitcoin Cash 2026 upgrade (Loops,Functions,P2S&Bitwise) and discussing with technical expert @Darkerduck
+>
+> As investors, business owners and promoters, We fully support network upgrades and optimizations to show more sparks
+>
+> —<cite>[Taiwan Bitcoin Cash (台灣比特幣現金)](https://twbitcoin.cash/) <a href="https://x.com/twbitcoincash/status/1968707600218001771">⧉</a></cite>
 
 ### Disapprove
 
