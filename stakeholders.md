@@ -350,7 +350,7 @@ Responses from exchanges, miners, services, and other businesses.
 | [BTCPOP](https://btcpop.co/)                                   |   `v2.0.2`    |         |            |         |   ⏳    |
 | [Buda.com](https://www.buda.com/)                              |   `v2.0.2`    |         |            |         |   ⏳    |
 | [Bullish](https://bullish.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
-| [Buy Hodl Sell](https://buyhodlsell.com/)                      |   `v2.0.2`    |         |            |         |   ⏳    |
+| [Buy Hodl Sell](https://buyhodlsell.com/)                      |   `v2.0.2`    |   ✅    |            |         |         |
 | [BVOX](https://www.bvox.com/)                                  |   `v2.0.2`    |         |            |         |   ⏳    |
 | [Bybit](https://www.bybit.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
 | [BYDFi](https://www.bydfi.com/)                                |   `v2.0.2`    |         |            |         |   ⏳    |
@@ -647,6 +647,7 @@ The following articles have been published in support of this CHIP:
 - [BCH Guru](https://bch.guru/): [Statement via x.com](https://x.com/BCH_Guru/status/1977521931466510844) (October 12, 2025)
 - [Bitcoin.com](https://bitcoin.com/): "[Bitcoin.com Supports the May 2026 Bitcoin Cash Upgrade](https://news.bitcoin.com/bitcoin-com-supports-the-may-2026-bitcoin-cash-upgrade/)" (October 21, 2025)
 - [David Shattuck](https://x.com/davidshattuck8): [Statement via x.com](https://x.com/davidshattuck8/status/1982094917594657149) (October 25, 2025)
+- [Buy Hodl Sell](https://buyhodlsell.com/): "[Bitcoin Cash May 2026 Upgrade - What to Expect](https://buyhodlsell.com/articles/bch-may-2026-upgrade-preview)" (October 30, 2025)
 
 The following statements have been submitted in support of this CHIP.
 
@@ -972,6 +973,12 @@ The following statements have been submitted in support of this CHIP.
 > "Bitcoin Cash: The Bitcoin with Loops" ! 🥳
 >
 > —<cite>[David Shattuck](https://x.com/davidshattuck8), [A Fifth of Gaming](https://afifthofgaming.com/), [BitcoinCashClient](https://github.com/david-shattuck/BitcoinCashClient) <a href="https://x.com/davidshattuck8/status/1982094917594657149">⧉</a></cite>
+
+> The May 2026 upgrade is a major step forward for Bitcoin Cash, delivering powerful new tools for smart contract developers and users. Bounded loops and reusable functions make contracts more concise and maintainable, while Pay to Script and bitwise operations unlock new use cases and efficiencies. Together, these improvements strengthen BCH as a platform for payments, DeFi, and advanced on-chain protocols.
+>
+> The Buy Hodl Sell team supports the proposed upgrades to the Bitcoin Cash network and looks forward to the continued growth and innovation they will bring to the ecosystem.
+>
+> —<cite>[Buy Hodl Sell](https://buyhodlsell.com) <a href="https://buyhodlsell.com/articles/bch-may-2026-upgrade-preview">⧉</a></cite>
 
 ### Disapprove
 
