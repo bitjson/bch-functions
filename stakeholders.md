@@ -179,7 +179,7 @@ Responses from open source libraries, indexers, educational resources, and commu
 | [Bitcoin Cash Explorer](https://explorer.salemkode.com/)                  |   `v2.0.2`    |         |            |   ➖    |
 | [Bitcoin Cash Foundation](https://bitcoincashfoundation.org/)             |   `v2.0.2`    |         |            |   ➖    |
 | [Bitcoin Cash Hangout](https://rss.com/podcasts/fiendishcrypto/)          |   `v2.0.2`    |   ✅    |            |         |
-| [Bitcoin Cash Podcast](https://bitcoincashpodcast.com/)                   |   `v2.0.2`    |         |            |   ➖    |
+| [Bitcoin Cash Podcast](https://bitcoincashpodcast.com/)                   |   `v2.0.2`    |   ✅    |            |         |
 | [Bitcoin Cash TV](https://bitcoincashtv.com/)                             |   `v2.0.2`    |         |            |   ➖    |
 | [BitcoinCash Nigeria](https://bch.ng/)                                    |   `v2.0.2`    |         |            |   ➖    |
 | [BitcoinCash.org](https://bitcoincash.org/)                               |   `v2.0.2`    |         |            |   ➖    |
